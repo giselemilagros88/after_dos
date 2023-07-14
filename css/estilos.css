@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.padreNavHeader{
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(225, 225, 225);
+}
+.contenedorLogo{
+    width:8%;
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+.contenedorLogo a img{
+    width:100%;
+}
+
+/*ul de nav del header*/
+.listaNav{
+    list-style: none;
+}
+.listaItem{
+    display: inline-block;
+    padding-right: 3rem;
+}
+.listaItem a{
+    text-decoration: none;
+   
+}
+.colorCeleste{
+    color:rgb(97, 155, 243);
+}
+.colorRosa{
+    color:rgb(241, 127, 146);
+}
+.padreBanner{
+    height: 60vh;
+    background-color:pink;
+   
+
+}
+.contenedorImgBanner{
+    width:100%;
+    height: 100%;
+    background-image: url("../assets/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: start;
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom:3rem ;
+  
+}
+.botonLeerAhora{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.contenedorTitulosPrincipales{
+    text-align: center;
+    width:60%;
+    margin:0 auto;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+}
+.contenedorTitulosPrincipales h1{
+    font-size:3rem;
+    margin-bottom: 3rem;
+}
+.galeria{
+    width:85%;
+    margin:0 auto;
+   
+    gap:3rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.galeria .hijoGaleria{
+    width:350px;
+    height:350px ;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    padding-bottom:1rem;
+}
+
+.hijoGaleria img{
+    width:100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.opinion h2{
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.galeriaOpinion{
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+}
+
+.hijoGaleriaOpinion{
+    width:20%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.hijoGaleriaOpinion img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer{
+    height: 30vh;
+    background-color:gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+@media screen and (min-width:0px) and (max-width: 768px) {
+    .padreNavHeader{
+        flex-direction: column;
+        height: initial;
+    }
+   
+    .contenedorLogo a img{
+        width:80px;
+    }
+    .navHeader{
+        width:100%;
+    }
+   
+    .listaItem{
+        display: block;
+        border-bottom: 1px solid rgb(54, 54, 54);
+        text-align: center;
+        margin-bottom: 0.5rem;
+       /* padding-right: 3rem;*/
+    }
+    .listaItem a{
+        font-size: 1.5rem;
+    }
+    .galeriaOpinion{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hijoGaleriaOpinion{
+        width: 80%;
+        height: initial;
+    }
+}
