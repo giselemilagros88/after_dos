@@ -1,73 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-.padreNavHeader{
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-color: rgb(225, 225, 225);
+body{
+    font-family: 'Inter', sans-serif;
 }
-.contenedorLogo{
-    width:8%;
-    display: flex;
-    align-items: center;
-    justify-content:center
+.navbar-light .navbar-nav .nav-link.colorCeleste{
+    color:rgb(32, 118, 247);
 }
-.contenedorLogo a img{
+.navbar-light .navbar-nav .nav-link.colorRosa{
+    color:rgb(239, 60, 90);
+}
+.bgRosa{
+    background-color:rgb(236, 181, 190);
+}
+.carousel{
+    width:100%;
+    padding: 0;
+    margin:0;
+}
+.carousel-item{
+    height:60vh;
     width:100%;
 }
-
-/*ul de nav del header*/
-.listaNav{
-    list-style: none;
-}
-.listaItem{
-    display: inline-block;
-    padding-right: 3rem;
-}
-.listaItem a{
-    text-decoration: none;
-   
-}
-.colorCeleste{
-    color:rgb(97, 155, 243);
-}
-.colorRosa{
-    color:rgb(241, 127, 146);
-}
-.padreBanner{
-    height: 60vh;
-    background-color:pink;
-   
-
-}
-.contenedorImgBanner{
-    width:100%;
+.carousel-item .imgAdaptada{
+    width: 100%;
     height: 100%;
-    background-image: url("../assets/img/banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: start;
-    display: flex;
-    
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom:3rem ;
-  
+    object-fit: cover;
 }
 .botonLeerAhora{
     display: inline-block;
     width: 200px;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     font-size: 1.5rem;
     background-color: cornflowerblue;
     text-align: center;
+}
+.bgTextoCarrusel{
+    background-color: rgba(250, 250, 250, 0.5);
 }
 .contenedorTitulosPrincipales{
     text-align: center;
@@ -80,32 +54,9 @@
     font-size:3rem;
     margin-bottom: 3rem;
 }
-.galeria{
-    width:85%;
-    margin:0 auto;
-   
-    gap:3rem;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.galeria .hijoGaleria{
-    width:350px;
-    height:350px ;
-    border-radius: 10px;
-    background-color: cornflowerblue;
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: space-between;
-    padding-bottom:1rem;
-}
-
-.hijoGaleria img{
-    width:100%;
-    height: 70%;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
+.card{
+    width:22rem;
+    margin-bottom: 1rem;
 }
 .opinion h2{
     margin-top:3rem;
@@ -128,11 +79,12 @@
    
 }
 
+
 .hijoGaleriaOpinion img{
     width:200px;
     height:200px;
     object-fit: cover;
-    border-radius: 50%;
+  /*  border-radius: 50%;*/
 }
 
 .footer{
@@ -145,18 +97,15 @@
 }
 
 @media screen and (min-width:0px) and (max-width: 768px) {
-    .padreNavHeader{
-        flex-direction: column;
-        height: initial;
+    .carousel-item{
+        height:40vh;
     }
-   
-    .contenedorLogo a img{
-        width:80px;
+    .carousel-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
-    .navHeader{
-        width:100%;
-    }
-   
+  
     .listaItem{
         display: block;
         border-bottom: 1px solid rgb(54, 54, 54);
